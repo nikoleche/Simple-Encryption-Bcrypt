@@ -1,0 +1,9 @@
+<h1>Register Page</h1>
+<form method="POST">
+  {{#if error}}<p class="error">{{error.message}}</p>{{/if}}
+  <label>Username: <input type="text" name="username" {{#if formData}} value="{{formData.username}}"{{/if}} /></label>
+  <label>Password: <input type="password" name="password" /></label>
+  <label>Repeat password:
+    <input type="password" name="repeatpw" /></label>
+  <input type="submit" value="Register" />
+</form>
